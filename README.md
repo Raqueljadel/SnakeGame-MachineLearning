@@ -1,6 +1,6 @@
 # 🐍 Snake Game – Machine Learning with Weka
 
-> ⚠️ **Note**: This project was developed as part of my coursework during the second year of my **Data Science & Engineering** degree. It represents an early exploration of applying machine learning concepts in practice.
+> ⚠️ **Note**: This project was developed as part of my coursework during the first year of my **Data Science & Engineering** degree. It represents an early exploration of applying machine learning concepts in practice.
 
 ## 🧠 Project Overview
 
@@ -9,36 +9,46 @@ This project applies **Machine Learning methodologies** to the classic **Snake g
 - Developing predictive and classification models based on gameplay data.
 - Constructing an **autonomous agent** that can control the snake intelligently using the trained models.
 
-Through this project, we explore how traditional ML techniques can be adapted to real-time decision-making in games.
+Through this project, we explored how traditional ML techniques can be adapted to real-time decision-making in games.
 
-## 🛠 Tools & Technologies
+### 🐍 Game Implementation
 
-- 🧪 **Weka** – for data preprocessing, training classifiers, and evaluation
-- 💻 **Python and Java** – for Snake game implementation and integration with Weka models
-- 📈 **ML Algorithms** – Decision Trees, Naive Bayes, k-NN, etc.
+- `SnakeGame.py`: Basic Snake game logic
+- `SnakeGame_intelligent_agent.py`: Integrates Weka predictions to automate snake behavior
+- `wekaI.py`: Interface with Weka classifiers
+- `Prediction-Classification/Datasets/`: Contains ARFF-formatted data for training models
+- `Report/`: Contains the full report for this phase
 
-## 🤖 Intelligent Agent
-
-An **autonomous snake** was implemented to:
-- Collect features at each time step (e.g., direction to food, danger in next move, current length)
-- Use a trained model to choose the next direction
-- Play the game based on model predictions
-
-This allowed us to test and compare different machine learning strategies in a dynamic environment.
-
-## 📄 Report
-
-For more details on the problem formulation, feature engineering, model training, and results:
-
-📄 [Click here to view the full project report (PDF)](report/Snake_ML_Report.pdf)
-
-## 📌 Key Learnings
-
-- Practical experience with **classification problems** and **supervised learning**
-- Integration of ML models in real-time decision-making
-- The challenges of applying static ML models to dynamic environments like games
+📄 [Click here to read the full project report](Report/MLI___Assignment_I.pdf)
 
 ---
+
+## 🔁 Second Activity: Q-Learning Agent (Phase 2 & 3)
+
+In the second phase of the course, we implemented a **Reinforcement Learning agent** using the **Q-learning algorithm**. This agent:
+
+- Learns to chase food while avoiding its own body
+- Is trained via trial-and-error using Q-values
+- Aims to maximize the score over many episodes
+
+📂 You can find this part of the project in the [`Q-Learning/`](./Q-Learning/) folder, including:
+- `Phase 2/`: Initial Q-learning implementation
+- `Phase 3/`: Extended/optimized version
+- `Report/`: Project documentation for this phase
+
+📄 [Click here to read the Q-Learning report](Q-Learning/Report/MLI___Assignment_II.pdf)
+
+---
+
+## 📌 Summary of Techniques
+
+| Phase              | Methodology         | Tools Used | Description                              |
+|--------------------|---------------------|-------------|------------------------------------------|
+| Prediction-Classification | Supervised ML        | Weka        | Build a model to guide the snake using predictions |
+| Q-Learning         | Reinforcement Learning | Python (custom) | Train an agent that learns through rewards |
+
+---
+
 ## 👩‍💻 Made by
 
 [![GitHub](https://img.shields.io/badge/GitHub-Raqueljadel-181717?logo=github&style=flat-square)](https://github.com/Raqueljadel)
