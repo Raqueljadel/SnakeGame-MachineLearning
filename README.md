@@ -19,7 +19,7 @@ Through this project, we explored how traditional ML techniques can be adapted t
 - `Prediction-Classification/Datasets/`: Contains ARFF-formatted data for training models
 - `Report/`: Contains the full report for this phase
 
-📄 [Click here to read the full project report](Prediction-Classification/Report/MLI___Assignment_I.pdf)
+📄 [Click here to read the Prediction/Classification report](Prediction-Classification/Report/MLI___Assignment_I.pdf)
 
 ---
 
